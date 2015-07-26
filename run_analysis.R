@@ -14,6 +14,7 @@ if (!file.exists("UCI HAR Dataset")) {
 }
 
 # Load activity labels + features
+
 activity <- read.table("UCI HAR Dataset/activity_labels.txt")
 activity[,2] <- as.character(activity[,2])
 features <- read.table("UCI HAR Dataset/features.txt")
